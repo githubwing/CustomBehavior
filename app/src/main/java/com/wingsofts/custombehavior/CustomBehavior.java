@@ -5,13 +5,9 @@ import android.content.res.TypedArray;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.BounceInterpolator;
 import de.hdodenhof.circleimageview.CircleImageView;
-
-@SuppressWarnings("unused")
 
 
 //泛型为child类型
@@ -94,16 +90,6 @@ public class CustomBehavior extends CoordinatorLayout.Behavior<CircleImageView> 
         child.setLayoutParams(layoutParams);
 
         return true;
-    }
-
-    public int getStatusBarHeight() {
-        int result = 0;
-        int resourceId = mContext.getResources().getIdentifier("status_bar_height", "dimen", "android");
-
-        if (resourceId > 0) {
-            result = mContext.getResources().getDimensionPixelSize(resourceId);
-        }
-        return result;
     }
 
 
