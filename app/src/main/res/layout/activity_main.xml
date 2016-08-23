@@ -1,0 +1,81 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlHardcoded"
+    >
+
+  <android.support.design.widget.AppBarLayout
+      app:elevation="0dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      >
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        >
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:scaleType="centerCrop"
+          android:src="@drawable/bg"
+          android:tint="#11000000"
+          app:layout_collapseMode="parallax"
+          app:layout_collapseParallaxMultiplier="0.9"
+          />
+
+      <FrameLayout
+          android:id="@+id/frameLayout"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_gravity="bottom|center_horizontal"
+          android:background="@color/primary"
+          android:orientation="vertical"
+          app:layout_collapseMode="parallax"
+          app:layout_collapseParallaxMultiplier="0.3"
+          >
+
+      </FrameLayout>
+    </android.support.design.widget.CollapsingToolbarLayout>
+  </android.support.design.widget.AppBarLayout>
+
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="none"
+      app:behavior_overlapTop="30dp"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+      >
+
+    <include layout="@layout/layout_main"/>
+  </android.support.v4.widget.NestedScrollView>
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/main.toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/primaryDark"
+      app:layout_anchor="@id/frameLayout"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark"
+      >
+  </android.support.v7.widget.Toolbar>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:layout_width="@dimen/image_width"
+      android:layout_height="@dimen/image_width"
+      android:layout_gravity="center_horizontal"
+      android:src="@drawable/avator"
+      app:border_color="@android:color/white"
+      app:border_width="2dp"
+      app:finalHeight="50dp"
+      app:layout_behavior=".CustomBehavior"
+      />
+</android.support.design.widget.CoordinatorLayout>

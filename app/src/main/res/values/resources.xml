@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- colors -->
+  <color name="primary">#03A9F4</color>
+  <color name="primaryDark">#0288D1</color>
+
+  <!-- dimensions -->
+  <dimen name="image_width">120dp</dimen>
+  <dimen name="image_final_width">32dp</dimen>
+  <dimen name="spacing_normal">16dp</dimen>
+
+  <!-- styles -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+  </style>
+
+  <!-- strings -->
+  <string name="app_name">Behavior Demo</string>
+    <string name="content">
+在MVP的使用过程中，我们需要反复的去写各种MVP的接口和实现类， 实在是 太麻烦了！！所以抽时间撸了一款插件（只可用于Intellj IDEA 和 Android Studio），用于生成MVP接口以及他的实现类，可以略微提升一点开发效率...
+
+    </string>
+
+    <string name="content1">
+关于Dagger2是啥，用法网上已经有很多了。不过听说你已经很多次Dagger2从入门到放弃了，来来，让我这个老中医给你治一治。老夫手法纯熟，不会让你有任何痛苦的，放心读下去吧。
+本文同步自 博主的私人博客 wing的地方酒馆...
+    </string>
+<string name="content3">
+Android开发规范为了规范开发，减小重构成本，总结编码规范如下，分享给大家，提供个参考命名规范 关于MVP对于MVP模式，由于需要实现众多的接口，导致代码臃肿，故决定采取Contract模式...
+    </string>
+</resources>
