@@ -68,6 +68,7 @@
   </android.support.v7.widget.Toolbar>
 
   <de.hdodenhof.circleimageview.CircleImageView
+      android:id= "@+id/iv_avatar"
       android:layout_width="@dimen/image_width"
       android:layout_height="@dimen/image_width"
       android:layout_gravity="center_horizontal"
