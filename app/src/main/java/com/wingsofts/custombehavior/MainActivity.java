@@ -16,4 +16,16 @@ public class MainActivity extends AppCompatActivity {
       }
     });
   }
+
+
+  public void titleMode(View v){
+    findViewById(R.id.iv_avatar).setVisibility(View.INVISIBLE);
+    findViewById(R.id.tv_title).setVisibility(View.VISIBLE);
+  }
+
+  public void avatarMode(View v ){
+
+    findViewById(R.id.iv_avatar).setVisibility(View.VISIBLE);
+    findViewById(R.id.tv_title).setVisibility(View.INVISIBLE);
+  }
 }

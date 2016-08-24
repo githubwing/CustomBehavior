@@ -8,10 +8,10 @@
     >
 
   <android.support.design.widget.AppBarLayout
-      app:elevation="0dp"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:elevation="0dp"
       >
 
     <android.support.design.widget.CollapsingToolbarLayout
@@ -68,7 +68,7 @@
   </android.support.v7.widget.Toolbar>
 
   <de.hdodenhof.circleimageview.CircleImageView
-      android:id= "@+id/iv_avatar"
+      android:id="@+id/iv_avatar"
       android:layout_width="@dimen/image_width"
       android:layout_height="@dimen/image_width"
       android:layout_gravity="center_horizontal"
@@ -78,4 +78,19 @@
       app:finalHeight="50dp"
       app:layout_behavior=".CustomBehavior"
       />
+  <TextView
+
+      android:visibility="invisible"
+      android:id="@+id/tv_title"
+      android:textColor="#fff"
+      android:textSize="18sp"
+      android:gravity="center"
+      android:text="头条"
+      app:layout_behavior=".DrawerBehavior"
+      android:background="@color/primaryDark"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      >
+
+  </TextView>
 </android.support.design.widget.CoordinatorLayout>

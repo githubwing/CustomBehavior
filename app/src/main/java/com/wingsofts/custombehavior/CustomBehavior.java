@@ -65,8 +65,10 @@ public class CustomBehavior extends CoordinatorLayout.Behavior<CircleImageView> 
         }
 
 
-        //让ImageView跟随toolbar垂直移动
         //child.setY(dependency.getY());
+
+        //让ImageView跟随toolbar垂直移动
+
         child.setY(dependency.getY()+dependency.getHeight()/2-mCustomFinalHeight/2);
 
         float percent = dependency.getY() / mStartAvatarY;
